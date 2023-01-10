@@ -6,20 +6,19 @@ namespace Practice
     {
         static void Main(string[] arge)
         {
-            int result1 = 2 + 5 * 2;
+            int a = 0;
+            a += 5; // The equivalent of a = a + 5; (a is 5 after this line runs.) 
+            a -= 2; // The equivalent of a = a – 2; (a is 3 after this line runs.)
+            a *= 4; // The equivalent of a = a * 4; (a is 12 after this line runs.)
+            a /= 2; // The equivalent of a = a / 2; (a is 6 after this line runs.)
+            a %= 2; //  The equivalent of a = a % 2; (a is 0 after this line runs.)
 
-            int partialResult = 2 + 5;
-            int result2 = partialResult * 2;
+            /* increment and decrement operators */
+            int b = 0;
+            b++; // The equivalent of a += 1; or a = a + 1;
+            b--; // The equivalent of a -= 1; or a = a - 1;
 
-            // Parentheses force the computer to do 2 + 5 before the multiplication
-            int result3 = (2 + 5) * 2;
-
-            int result4 = ((2 + 1) * 8 - (3 * 2) * 2) / 4;
-
-            Console.WriteLine(result1);
-            Console.WriteLine(result2);
-            Console.WriteLine(result3);
-            Console.WriteLine(result4);
+            double area = Math.PI * radius * radius;
 
             Console.ReadLine(); 
         }
