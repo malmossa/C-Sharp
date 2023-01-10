@@ -6,34 +6,20 @@ namespace Practice
     {
         static void Main(string[] arge)
         {
-            double number1 = 3.5623;
-            float number2 = 3.5623f; // f for float
-            decimal number3 = 3.5623m; // m for money
+            int result1 = 2 + 5 * 2;
 
-            double avogadrosNumber = 6.022e23;
+            int partialResult = 2 + 5;
+            int result2 = partialResult * 2;
 
-            bool itWorked = true;
-            itWorked= false;
+            // Parentheses force the computer to do 2 + 5 before the multiplication
+            int result3 = (2 + 5) * 2;
 
-            string name = "Mansor";
+            int result4 = ((2 + 1) * 8 - (3 * 2) * 2) / 4;
 
-            var message = "Hello there";
-
-            Console.WriteLine("What is your favorite number?"); ;
-            string favoriteNumberText = Console.ReadLine();
-            
-            int favoriteNumber = int.Parse(favoriteNumberText);
-            
-
-            Console.WriteLine(number1);
-            Console.WriteLine(number2);
-            Console.WriteLine(number3);
-            Console.WriteLine(avogadrosNumber);
-            Console.WriteLine(itWorked);
-            Console.WriteLine(name);
-            Console.WriteLine(message);
-            Console.WriteLine(favoriteNumber);
-            
+            Console.WriteLine(result1);
+            Console.WriteLine(result2);
+            Console.WriteLine(result3);
+            Console.WriteLine(result4);
 
             Console.ReadLine(); 
         }
